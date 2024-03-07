@@ -22,10 +22,13 @@ async function fetchData() {
 function App() {
   return (
     <div className="App">
-       <input type="text" id="pokemonName" placeholder="Enter pokemon name"/>
-    <button onClick={fetchData}>Fetch Pokemon</button>
+      <div className="poke">
+      <p>ポケモンの名前を書いてね</p>
+       <input type="text" id="pokemonName" placeholder="Skriv pokemon namn"/>
+       <br/>
+    <button onClick={fetchData}>クリック！</button>
     <img src="" alt="Pokemon Sprite" id="pokemonSprite" style={{ display: 'none' }}/>
-
+    </div>
     </div>
   );
 }
